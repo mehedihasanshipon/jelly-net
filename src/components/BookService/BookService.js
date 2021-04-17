@@ -10,7 +10,7 @@ const BookService = () => {
     console.log(id);
 
     useEffect(()=>{
-          fetch(`http://localhost:3002/serviceBook/${id}`)
+          fetch(`https://arcane-earth-23452.herokuapp.com/serviceBook/${id}`)
           .then(res=>res.json())
           .then(data=>{
             setService(data);

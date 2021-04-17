@@ -24,7 +24,7 @@ const AddServices = () => {
     formData.append('price',services.price);
     formData.append('desc',services.desc);
 
-    fetch('http://localhost:3002/addService',{
+    fetch('https://arcane-earth-23452.herokuapp.com/addService',{
         method: "POST",
         body: formData,
     })

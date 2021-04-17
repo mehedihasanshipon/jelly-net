@@ -12,7 +12,7 @@ const Sidebar = () => {
   // console.log(admin);
 
   useEffect(() => {
-    fetch("http://localhost:3002/isAdmin", {
+    fetch("https://arcane-earth-23452.herokuapp.com/isAdmin", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ email: loggedInUser.email }),

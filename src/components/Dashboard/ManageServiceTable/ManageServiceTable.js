@@ -3,7 +3,7 @@ import React from "react";
 const ManageServiceTable = ({ services }) => {
 //   console.log(services);
   const handleDeleteClick = (id) => {
-    fetch(`http://localhost:3002/service/${id}`, {
+    fetch(`https://arcane-earth-23452.herokuapp.com/service/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())

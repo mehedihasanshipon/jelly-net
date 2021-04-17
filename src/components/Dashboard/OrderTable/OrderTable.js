@@ -9,7 +9,7 @@ const OrderTable = ({ orders }) => {
   // console.log(admin);
 
   useEffect(() => {
-    fetch("http://localhost:3002/isAdmin", {
+    fetch("https://arcane-earth-23452.herokuapp.com/isAdmin", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ email: loggedInUser.email }),
@@ -27,7 +27,7 @@ const OrderTable = ({ orders }) => {
     // formData.append('status',status);
 
 
-    fetch("http://localhost:3002/update/:id", {
+    fetch("https://arcane-earth-23452.herokuapp.com/update/:id", {
       method: "PATCH",
       headers: { "Content-type": "application/json; charset=UTF-8" },
       body:JSON.stringify(something)

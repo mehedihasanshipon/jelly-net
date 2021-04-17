@@ -23,7 +23,7 @@ const ReviewForm = () => {
         formData.append('designation',reviews.designation);
         formData.append('desc',reviews.desc);
     
-        fetch('http://localhost:3002/addReview',{
+        fetch('https://arcane-earth-23452.herokuapp.com/addReview',{
             method: "POST",
             body: formData,
         })

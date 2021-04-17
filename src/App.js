@@ -27,9 +27,9 @@ const [loggedInUser,setLoggedInUser] = useState({});
           <Route exact path="/addService">
             <AddServices />
           </Route>
-          <Route exact path="/manageServices">
+          <PrivateRoute exact path="/manageServices">
             <ManageService />
-          </Route>
+          </PrivateRoute>
           <Route exact path="/bookService/:id">
             <BookService />
           </Route>

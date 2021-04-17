@@ -30,7 +30,7 @@ const Testimonials = () => {
     const [reviews,setReviews] = useState([]);
 
     useEffect(()=>{
-        fetch('http://localhost:3002/reviews')
+        fetch('https://arcane-earth-23452.herokuapp.com/reviews')
         .then(res=>res.json())
         .then(data=> {
             setReviews(data);

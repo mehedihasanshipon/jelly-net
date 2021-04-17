@@ -17,7 +17,7 @@ console.log(orders);
 
     const handleOrder = (paymentId)=>{
         const order = {...orders,paymentId,status}
-        fetch('http://localhost:3002/bookOrder',{
+        fetch('https://arcane-earth-23452.herokuapp.com/bookOrder',{
             method: 'POST',
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',

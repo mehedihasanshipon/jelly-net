@@ -19,7 +19,7 @@ const MakeAdmin = () => {
         e.preventDefault();
         // const formData = new FormData();
         // formData.append('admin',admin)
-        fetch('http://localhost:3002/addAdmin',{
+        fetch('https://arcane-earth-23452.herokuapp.com/addAdmin',{
             method: 'POST',
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',

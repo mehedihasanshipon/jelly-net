@@ -10,7 +10,7 @@ const OrderList = () => {
     // console.log(orders);
     
     useEffect(() => {
-        fetch("http://localhost:3002/orderList", {
+        fetch("https://arcane-earth-23452.herokuapp.com/orderList", {
           method: "POST",
           headers: { "content-type": "application/json" },
           body: JSON.stringify({ email: loggedInUser.email }),
