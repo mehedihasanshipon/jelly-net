@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Sidebar from "../Dashboard/Sidebar/Sidebar";
 
 const AddServices = () => {
   const [services, setServices] = useState({});
@@ -39,8 +40,14 @@ const AddServices = () => {
     })
   }
   return (
-    <div className="container mt-5">
-      <div className="col-md-6">
+  
+      <div className="row">
+        <div className="col-md-3">
+        <Sidebar />
+        </div>
+        <div className="col-md-9">
+        <div className="col-md-6 mt-3">
+          <h2>Add Service</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-3">
             <input
@@ -80,7 +87,9 @@ const AddServices = () => {
           <input type="submit" value="Add service" />
         </form>
       </div>
-    </div>
+        </div>
+      </div>
+   
   );
 };
 

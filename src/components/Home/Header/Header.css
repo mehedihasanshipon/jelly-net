@@ -30,7 +30,7 @@
     transition: all 0.3s ease-out !important;
 }
 .nav-link:hover{
-    border: 2px solid #6CC7E8;
+    /* border: 2px solid #6CC7E8; */
     border-radius: 5px;
     color: #6CC7E8;
 }

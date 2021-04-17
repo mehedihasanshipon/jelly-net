@@ -38,12 +38,13 @@ const OrderTable = ({ orders }) => {
       });
   };
   return (
-    <table className="table">
+    <table className="table table-hover">
       <thead>
         <tr>
           <th scope="col">#</th>
-          <th scope="col">First</th>
-          <th scope="col">Last</th>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Service</th>
           <th scope="col">Status</th>
           {/* <th scope="col">Action</th> */}
         </tr>
@@ -54,12 +55,13 @@ const OrderTable = ({ orders }) => {
             <th scope="row">{index + 1}</th>
             <td>{order.data.name}</td>
             <td>{order.data.email}</td>
+            <td>{order.data.service}</td>
             {/* <td>{order._id}</td> */}
             {admin ? (
               <td>
                 <Dropdown>
                   <Dropdown.Toggle variant="success" id="dropdown-basic">
-                    Dropdown Button
+                    Change Status
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu>
@@ -73,16 +75,7 @@ const OrderTable = ({ orders }) => {
                   </Dropdown.Menu>
                 </Dropdown>
 
-                {/* <select onChange={() => handleUpdateStatus(order._id)} className="form-select" >
-                <option onClick={()=>{
-                  console.log("Button");
-                }} value="1">Done</option>
-                <option  value="2">Pending</option>
-                <option  value="3">Ongoing</option>
-            </select> */}
-                {/* <button value="1" onClick={() => handleUpdateStatus(order._id)}>Done</button>
-            <button value="2" onClick={() => handleUpdateStatus(order._id)}>Pending</button>
-            <button value="3" onClick={() => handleUpdateStatus(order._id)}>Ongoing</button> */}
+                
               </td>
             ) : (
               <td>{order.data.status}</td>

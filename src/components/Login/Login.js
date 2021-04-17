@@ -4,6 +4,8 @@ import "firebase/auth";
 import firebaseConfig from "./firebase.config";
 import { UserContext } from "../../App";
 import { useHistory, useLocation } from "react-router";
+import Navbars from "../Home/Navbars/Navbars";
+
 
 if (firebase.apps.length === 0) {
   firebase.initializeApp(firebaseConfig);
@@ -34,9 +36,14 @@ const Login = () => {
   };
   return (
     <div>
-      <button onClick={handleGoogleSignIn} className="btn btn-primary">
-        Google sign-in
-      </button>
+      <Navbars />
+      <div style={{height:'400px'}} className="d-flex align-items-center justify-content-center">
+        <div>
+        <button onClick={handleGoogleSignIn} className="btn btn-primary">
+          Google sign-in
+        </button>
+        </div>
+      </div>
     </div>
   );
 };

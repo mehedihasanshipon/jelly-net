@@ -15,9 +15,9 @@ const Services = () => {
         })
     },[])
     return (
-        <section className="service-container my-5 pb-5">
+        <section className="service-container mt-5 pb-5">
             <div className="container">
-            <div className="text-center py-5 text-top">
+            <div className="text-center pt-5 text-top">
                 <h6 style={{fontWeight:'800'}}>JELLYNET BROADBAND INTERNET</h6>
                 <h4>Network Solutions From Jellynet</h4>
             </div>

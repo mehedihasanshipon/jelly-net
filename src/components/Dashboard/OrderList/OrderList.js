@@ -8,7 +8,7 @@ const OrderList = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     const [orders,setOrders] = useState([]);
     // console.log(orders);
-
+    
     useEffect(() => {
         fetch("http://localhost:3002/orderList", {
           method: "POST",

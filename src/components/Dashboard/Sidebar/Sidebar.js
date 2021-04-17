@@ -2,6 +2,9 @@ import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { UserContext } from "../../../App";
 import "./Sidebar.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { faHome,faCartPlus,faShoppingBag,faCommentDots,faPlus,faUserCog,faCogs } from '@fortawesome/free-solid-svg-icons'
 
 const Sidebar = () => {
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
@@ -23,38 +26,38 @@ const Sidebar = () => {
         <ul className="list-unstyled p-4 ">
           <li className="pb-2">
             <Link to="/" className="sidebar-menu">
-              Home
+            <FontAwesomeIcon className="me-2" icon={faHome} /> Home
             </Link>
           </li>
           {!admin ? (
             <div>
               <li className="pb-2">
-                <Link className="sidebar-menu">Book</Link>
+                <Link className="sidebar-menu"><FontAwesomeIcon className="me-2" icon={faCartPlus} /> Book</Link>
               </li>
               <li className="pb-3">
                 <Link to="/dashboard" className="sidebar-menu">
-                  Booking list
+                <FontAwesomeIcon className="me-2" icon={faShoppingBag} /> Booking list
                 </Link>
               </li>
               <li className=" pb-3">
-                <Link to="/addReview" className="sidebar-menu">Review</Link>
+                <Link to="/addReview" className="sidebar-menu"><FontAwesomeIcon className="me-2" icon={faCommentDots} />Review</Link>
               </li>
             </div>
           ) : (
             <div>
               <li className=" pb-3">
-                <Link className="sidebar-menu">Order list</Link>
+                <Link to="/dashboard" className="sidebar-menu"> <FontAwesomeIcon className="me-2" icon={faCartPlus} />Order list</Link>
               </li>
               <li className=" pb-3">
-                <Link className="sidebar-menu">Add service list</Link>
+                <Link to="/addService" className="sidebar-menu"> <FontAwesomeIcon className="me-2" icon={faPlus} />Add service list</Link>
               </li>
               <li className=" pb-3">
                 <Link to="addAdmin" className="sidebar-menu">
-                  Make Admin
+                <FontAwesomeIcon className="me-2" icon={faUserCog} /> Make Admin
                 </Link>
               </li>
               <li className=" pb-3">
-                <Link to="/manageServices" className="sidebar-menu">Manage Service</Link>
+                <Link to="/manageServices" className="sidebar-menu"><FontAwesomeIcon className="me-2" icon={faCogs} />Manage Service</Link>
               </li>
             </div>
           )}

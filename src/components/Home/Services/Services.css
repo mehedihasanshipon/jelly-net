@@ -5,7 +5,7 @@
     transition: all .5s ease-in-out;
 }
 .service-card:hover{
-    transform: scale(1.08);
+    /* transform: scale(1.08); */
     /* overflow: hidden !important; */
 }
 .text-top>h4{
@@ -22,4 +22,14 @@
     color: #7839A1;
     font-size: 24px;
     font-weight: 600;
+}
+.serviceImg figure img{
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .5s ease-in-out;
+}
+.serviceImg figure:hover img{
+    -webkit-transform: scale(1.3);
+	transform:rotateY(180deg);
 }

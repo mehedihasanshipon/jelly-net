@@ -33,13 +33,14 @@ const MakeAdmin = () => {
     }
     return (
         <div className="row">
-            <div className="col-md-2">
+            <div className="col-md-3">
                 <Sidebar />
             </div>
             <div className="col-md-6 my-5">
+                <h2>Make Admin</h2>
                 <form onSubmit={handleAddAdmin}>
                     <div className="mb-3">
-                        <input name="name" onBlur={handleBlur} type="text"/>
+                        <input name="name" onBlur={handleBlur} placeholder="Email" type="text"/>
                     </div>
                     <input type="submit" value="Add admin"/>
                 </form>

@@ -13,6 +13,7 @@ body {
 *{
   font-family: 'Nunito Sans', sans-serif;
   /* color: #323232 ; */
+  /* box-sizing: border-box !important; */
 }
 
 code {
