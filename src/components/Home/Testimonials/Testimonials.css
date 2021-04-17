@@ -1,0 +1,8 @@
+.testimonial-card{
+    /* border: 1px solid salmon; */
+}
+.testimonial-card img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}

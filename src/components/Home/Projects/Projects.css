@@ -1,0 +1,7 @@
+.project-container .project-card{
+    border: 5px solid #AD419B;
+    border-radius: 5px;
+    height: 100%;
+    background-color: #333B83;
+    color: white;
+}

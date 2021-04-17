@@ -1,0 +1,15 @@
+.contact{
+    background-color: #7E3BA2;
+    height: 500px;
+    /* color: white; */
+}
+.contact .contact-card{
+    background-color: white;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.contact .contact-card img{
+    height: 60px;
+    color: tomato !important;
+}

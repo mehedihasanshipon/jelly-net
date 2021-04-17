@@ -1,0 +1,15 @@
+.service-card{
+    /* border: 1px solid salmon; */
+    box-shadow: 4px 4px 8px gray;
+    border-radius: 4px;
+    transition: all .5s ease-in-out;
+}
+.service-card:hover{
+    transform: scale(1.08);
+    /* overflow: hidden !important; */
+}
+.service-container h4{
+    font-size: 35px !important;
+    font-weight: 600 !important;
+    color: #323232 !important; 
+}

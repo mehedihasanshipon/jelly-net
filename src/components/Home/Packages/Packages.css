@@ -1,0 +1,23 @@
+.package-container {
+  background-color: #f7f6fb;
+}
+.package-container .package-card {
+  /* border: 1px solid salmon; */
+  border-radius: 5px;
+}
+.package-card .package-title {
+  background: rgb(50, 58, 130);
+  background: linear-gradient(
+    90deg,
+    rgba(50, 58, 130, 1) 0%,
+    rgba(87, 57, 148, 1) 60%,
+    rgba(114, 56, 160, 1) 100%
+  );
+  padding: 15px 0;
+  color: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.package-card .package-title .card-top{
+    background-color: #f7f6fb !important;
+}

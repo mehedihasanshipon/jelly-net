@@ -1,0 +1,16 @@
+.sidebar{
+    background-color: #171B23;
+    height: 100vh;
+    padding-left: 20px;
+}
+.sidebar-menu{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all .5s ease-out;
+}
+.sidebar-menu:hover{
+    padding-left: 5px;
+    color: tomato;
+}
