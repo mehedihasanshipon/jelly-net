@@ -9,12 +9,14 @@ console.log(orders);
 
   const [paymentError, setPaymentError] = useState(null);
   const [paymentSuccess, setPaymentSuccess] = useState(null);
+  const [status,setStatus] = useState('Pending');
+  
   
 //   console.log(paymentSuccess);
 
 
     const handleOrder = (paymentId)=>{
-        const order = {...orders,paymentId}
+        const order = {...orders,paymentId,status}
         fetch('http://localhost:3002/bookOrder',{
             method: 'POST',
             headers: {
