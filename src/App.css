@@ -45,7 +45,8 @@
 }
 .button-primary:hover{
   background-color: transparent;
-  border: 3px solid #fff;
+  border: 3px solid #42b7e2;
+  color: #42b7e2;
 }
 
 .button-outline{

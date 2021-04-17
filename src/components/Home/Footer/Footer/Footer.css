@@ -4,7 +4,26 @@
 .footer-link{
     text-decoration: none;
     color: white;
+    font-size: 20px;
+    line-height: 2;
+}
+.footer-link:hover{
+    color: #388EAE !important;
 }
 .footer-bottom{
     background-color: #191D20;
+}
+.footer-header h6{
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+}
+.footer-header h6:hover{
+    color: #E42D27;
+}
+.footer-main h2{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
 }

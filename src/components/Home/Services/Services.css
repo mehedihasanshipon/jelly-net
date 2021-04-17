@@ -8,8 +8,18 @@
     transform: scale(1.08);
     /* overflow: hidden !important; */
 }
-.service-container h4{
+.text-top>h4{
+    /* color: red !important; */
+    font-weight: 600;
+    font-size: 30px;
+}
+.service-card h4{
     font-size: 35px !important;
     font-weight: 600 !important;
-    color: #323232 !important; 
+    color: #42B7E2 !important; 
+}
+.service-card h6{
+    color: #7839A1;
+    font-size: 24px;
+    font-weight: 600;
 }

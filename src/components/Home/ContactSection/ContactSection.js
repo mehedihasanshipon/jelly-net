@@ -2,20 +2,22 @@ import React from 'react';
 import './ContactSection.css';
 import headPhone from '../../../images/headphones.png'
 import ContactCard from '../ContactCard/ContactCard';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStore, faHeadphones,faCommentDollar } from '@fortawesome/free-solid-svg-icons'
 
 const contactData = [
     {
-        image:headPhone,
+        image:faHeadphones,
         contact:'Talk To An Agent',
         contactType:'Get a Call'
     },
     {
-        image:headPhone,
+        image:faCommentDollar,
         contact:'Chat With An Agent',
         contactType:'Chat Now'
     },
     {
-        image:headPhone,
+        image:faStore,
         contact:'Visit Jellynet Store',
         contactType:'Find a Service Center'
     }

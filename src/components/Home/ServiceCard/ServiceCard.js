@@ -19,7 +19,7 @@ const ServiceCard = ({ service }) => {
           src={`data:image/png;base64,${service.image.img}`}
           alt=""
         />
-        <h4>{service.name}</h4>
+        <h4 >{service.name}</h4>
         <h6>$ {service.price} </h6>
         <p>{service.desc}</p>
       </div>

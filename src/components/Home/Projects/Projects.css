@@ -1,7 +1,35 @@
 .project-container .project-card{
-    border: 5px solid #AD419B;
+    /* border: 1px solid #AD419B; */
     border-radius: 5px;
     height: 100%;
-    background-color: #333B83;
-    color: white;
+    transition: all .5s ease;
+}
+.project-card:hover{
+    /* border:1px solid salmon; */
+    box-shadow: 2px 2px 4px gray;
+}
+.project-container h2,h5{
+    font-weight: 600 !important;
+}
+.project-img{
+    border-radius: 25px;
+}
+.project-card h6{
+    font-size: 20px;
+    font-weight: 600;
+}
+.project-btn{
+    border:none;
+    background-color: #FF4F4F;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+.project-btn:hover{
+    background-color: transparent;
+    border: 2px solid #FF4F4F;
+    color: #FF4F4F;
 }

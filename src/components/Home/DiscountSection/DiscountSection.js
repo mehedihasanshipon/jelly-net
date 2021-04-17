@@ -1,5 +1,6 @@
 import React from 'react';
-import discImg from '../../../images/disc-img.png'
+import discImg from '../../../images/disc-img.png';
+import './DiscountSection.css'
 
 const DiscountSection = () => {
     return (
@@ -16,7 +17,7 @@ const DiscountSection = () => {
                     <li>10 hours of cloud DVR service</li>
                     <li>HD included</li>
                     <li>Speed good for 6-8 devices at the same time</li>
-                    <button className="btn btn-primary">Request a quote</button>
+                    <button className="button-primary my-3">Request a quote</button>
                 </div>
             </div>
         </section>

@@ -1,19 +1,23 @@
 import React from 'react';
 import ProjectCard from '../ProjectCard/ProjectCard';
 import './Projects.css';
+import projectImg from '../../../images/woman.jpg'
 
 const projectData = [
     {
         projectName: 'Bangladesh Government',
-        projectDescription:'We are moving towards the digitalization of our country. Bangladesh Government mostly focuses on the ICT part and link3 is contributing like a magic wand.'
+        image: projectImg,
+        desc: ' Lorem ipsum dolor sit amet consectetur adipisicing elit.'
     },
     {
         projectName: 'RMG Industry',
-        projectDescription:'We are moving towards the digitalization of our country. Bangladesh Government mostly focuses on the ICT part and link3 is contributing like a magic wand.'
+        image: projectImg,
+        desc: ' Lorem ipsum dolor sit amet consectetur adipisicing elit.'
     },
     {
         projectName: 'Telecom Industry',
-        projectDescription:'We are moving towards the digitalization of our country. Bangladesh Government mostly focuses on the ICT part and link3 is contributing like a magic wand.'
+        image: projectImg,
+        desc: ' Lorem ipsum dolor sit amet consectetur adipisicing elit.'
     }
 ]
 
@@ -22,7 +26,8 @@ const Projects = () => {
         <section className="project-container container my-5">
             <div className="text-center">
                 <h5>Our Project</h5>
-                <h2>Our Industry Wise Service Categorized</h2>
+                <h2>Explore our some projects</h2>
+               
             </div>
             <div className="row">
                 {

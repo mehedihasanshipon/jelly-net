@@ -31,7 +31,7 @@ const PackagesCard = ({ packages }) => {
               <li>Download shows quickly</li>
               <li>Download large files</li>
               <h4>{packages.price}</h4>
-              <button className="btn btn-primary">Shop Now</button>
+              <button className="button-primary">Shop Now</button>
           </div>
         </div>
       </div>

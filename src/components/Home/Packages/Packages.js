@@ -38,7 +38,7 @@ const Packages = () => {
         <section className="package-container my-5 py-5">
             <div className="text-center">
                 <p>NEW INTERNET PACKAGES ARE HERE!</p>
-                <h2>Better-Than-Ever Offers</h2>
+                <h4>Better-Than-Ever Offers</h4>
             </div>
             <div className="container">
                 <div className="row">

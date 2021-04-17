@@ -21,3 +21,26 @@
 .package-card .package-title .card-top{
     background-color: #f7f6fb !important;
 }
+.package-container p{
+  color: #323232 !important; 
+  font-weight: 600 !important;
+}
+.package-container h4{
+  color: #323232 !important; 
+  font-weight: 600 !important;
+  font-size: 36px;
+}
+.card-bottom,.discount-section {
+  list-style: none;
+}
+.card-bottom li::before,.discount-section li::before{
+  content: "\2022"; 
+  color: #42b7e2; 
+  font-weight: bold; 
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em; 
+}
+.discount-section li{
+  padding-left: 20px;
+}
