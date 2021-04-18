@@ -32,6 +32,7 @@ const ReviewForm = () => {
             if(data){
                 console.log(data);
                 alert("Review added successfully")
+                e.target.reset();
             }
         }).catch(err => {
             console.log(err);

@@ -29,6 +29,8 @@ const MakeAdmin = () => {
         .then(res=> res.json())
         .then(data=> {
             console.log(data);
+            alert("Admin added");
+            e.target.reset();
         })
     }
     return (
@@ -40,7 +42,7 @@ const MakeAdmin = () => {
                 <h2>Make Admin</h2>
                 <form onSubmit={handleAddAdmin}>
                     <div className="mb-3">
-                        <input name="name" onBlur={handleBlur} placeholder="Email" type="text"/>
+                        <input className="form-control" name="name" onBlur={handleBlur} placeholder="Email" type="text"/>
                     </div>
                     <input type="submit" value="Add admin"/>
                 </form>
