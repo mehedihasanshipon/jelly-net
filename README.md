@@ -4,9 +4,6 @@
 
 ## Live-link: https://assignment-11-a90a7.web.app/
 
-### Title name ###
-* Pick A Book: "Pick A Book" , {A telecommunication company where you can find all it related solution.}
-
 
 ### What I have been used for this project!! ###
 
