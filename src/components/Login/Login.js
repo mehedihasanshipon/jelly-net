@@ -18,6 +18,15 @@ const Login = () => {
   let location = useLocation();
   let { from } = location.state || { from: { pathname: "/" } };
 
+  const storeAuthToken = ()=> {
+    firebase.auth().currentUser.getIdToken(/* forceRefresh */ true).then(function(idToken) {
+      sessionStorage.setItem('token',idToken);
+      history.replace(from);
+    }).catch(function(error) {
+      // Handle error
+    });
+  }
+
   const handleGoogleSignIn = () => {
     firebase
       .auth()
@@ -26,7 +35,7 @@ const Login = () => {
         const { displayName, email } = result.user;
         const signedInUser = { name: displayName, email };
         setLoggedInUser(signedInUser);
-        history.replace(from);
+        storeAuthToken()
 
       })
       .catch((error) => {
