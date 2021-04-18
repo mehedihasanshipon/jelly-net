@@ -2,7 +2,7 @@ import React from "react";
 
 const PackagesCard = ({ packages }) => {
   return (
-    <div className="col-md-4 my-5">
+    <div className="col-md-6 col-lg-4 my-3">
       <div className="package-card shadow">
         <div className="package-title text-center">
           <h5>{packages.packageType}</h5>

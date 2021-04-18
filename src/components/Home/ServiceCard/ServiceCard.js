@@ -11,7 +11,7 @@ const ServiceCard = ({ service }) => {
 
   console.log(service);
   return (
-    <div className="col-md-4 gx-4 gy-4">
+    <div className="col-md-6 col-lg-4 gx-4 gy-4">
       <div onClick={()=>handleClick(service._id)} className="service-card h-100 text-center p-4 serviceImg">
         <figure>
         <img

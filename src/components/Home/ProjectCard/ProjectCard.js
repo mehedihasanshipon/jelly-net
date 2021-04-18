@@ -2,7 +2,7 @@ import React from "react";
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="col-md-4 mt-3">
+    <div className="col-md-6 col-lg-4 mt-3">
       <div className="project-card ">
         <div className="project-body p-4">
           <img className="img-fluid project-img" src={project.image} alt="" />

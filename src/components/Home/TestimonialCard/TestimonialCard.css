@@ -1,16 +1,9 @@
 .review-card{
     /* margin-bottom: 50px; */
-    width: 300px;
+    /* width: 300px; */
     border-radius: 10px !important;
 }
-.review-card .top-box {
-    background-color: #DFDBD5;
-    width: 300px;
-    height: 80px;
-    position: absolute;
-    /* position: relative; */
-    z-index: 1;
-}
+ 
 .review-card img {
     background-color: gray;
     border-radius: 100%;
@@ -21,14 +14,15 @@
     position: relative;
     display: block;
     margin: auto;
-    top: 25px;
+    /* top: 10px; */
     z-index: 5;
   }
   .bottom-box{
-    padding-top: 80px;
-    padding-left: 40px;
+    padding: 40px;
+    margin-top: 10px;
+    /* padding-left: 40px; */
     box-shadow: 2px 3px 6px rgba(0,0,0,0.16);
-    width: 300px;
+    /* width: 300px; */
     height: 50%;
     transform: translateY(-50px);
     text-align: center;
@@ -36,7 +30,7 @@
   blockquote{
     margin: 0 auto;
     padding: 0;
-    width: 210px;
+    /* width: 210px; */
   }
   blockquote p{
     font-style: italic;

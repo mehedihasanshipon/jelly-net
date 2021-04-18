@@ -4,11 +4,10 @@ import "./TestimonialCard.css";
 const TestimonialCard = ({ review }) => {
   console.log(review);
   return (
-    <div className="col-md-4 ">
+    <div className="col-md-6 col-lg-4 ">
       <div className="review-card">
-        <div class="top-box"></div>
+        
         <img
-          
           className="img-fluid"
           src={`data:image/png;base64,${review.image.img}`}
           alt=""

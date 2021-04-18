@@ -4,6 +4,7 @@
 .package-container .package-card {
   /* border: 1px solid salmon; */
   border-radius: 5px;
+  height: 100%;
 }
 .package-card .package-title {
   background: rgb(50, 58, 130);
@@ -17,6 +18,7 @@
   color: white;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  
 }
 .package-card .package-title .card-top{
     background-color: #f7f6fb !important;

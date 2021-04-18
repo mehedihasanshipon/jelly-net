@@ -11,8 +11,10 @@
 .project-container h2,h5{
     font-weight: 600 !important;
 }
-.project-img{
+.project-body .project-img{
     border-radius: 25px;
+    height:250px;
+    width: 100%;
 }
 .project-card h6{
     font-size: 20px;

@@ -10,6 +10,7 @@ const ManageServiceTable = ({ services }) => {
       .then((result) => {
         if (result) {
           console.log("Deleted");
+          alert("Data deleted successfully")
         }
       });
   };

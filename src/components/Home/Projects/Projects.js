@@ -2,21 +2,24 @@ import React from 'react';
 import ProjectCard from '../ProjectCard/ProjectCard';
 import './Projects.css';
 import projectImg from '../../../images/woman.jpg'
+import one from '../../../images/1.jpg'
+import two from '../../../images/2.jpg'
+import three from '../../../images/3.jpg'
 
 const projectData = [
     {
         projectName: 'Bangladesh Government',
-        image: projectImg,
+        image: one,
         desc: ' Lorem ipsum dolor sit amet consectetur adipisicing elit.'
     },
     {
         projectName: 'RMG Industry',
-        image: projectImg,
+        image: two,
         desc: ' Lorem ipsum dolor sit amet consectetur adipisicing elit.'
     },
     {
         projectName: 'Telecom Industry',
-        image: projectImg,
+        image: three,
         desc: ' Lorem ipsum dolor sit amet consectetur adipisicing elit.'
     }
 ]
