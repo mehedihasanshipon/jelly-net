@@ -31,7 +31,7 @@ const ReviewForm = () => {
         .then(data=>{
             if(data){
                 console.log(data);
-                alert("Service added successfully")
+                alert("Review added successfully")
             }
         }).catch(err => {
             console.log(err);

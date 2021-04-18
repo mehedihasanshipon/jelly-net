@@ -1,22 +1,38 @@
-import React from 'react';
+import React from "react";
+import "./TestimonialCard.css";
 
-const TestimonialCard = ({review}) => {
-    console.log(review);
-    return (
-        <div className="col-md-4 pt-5">
-            <div className="testimonial-card text-center p-4 shadow">
-            <img
-          style={{ height: "100px" }}
+const TestimonialCard = ({ review }) => {
+  console.log(review);
+  return (
+    <div className="col-md-4 ">
+      <div className="review-card">
+        <div class="top-box"></div>
+        <img
+          
           className="img-fluid"
           src={`data:image/png;base64,${review.image.img}`}
           alt=""
         />
-                <p className="pt-2">{review.desc}</p>
-                <h6>{review.name}</h6>
-                <small>{review.designation}</small>
-            </div>
+        <div className="bottom-box">
+          <blockquote>
+            <p className="pt-2">{review.desc}</p>
+          </blockquote>
+          <div className="test-details">
+            <p>
+              <span>{review.name}</span> <br /> {review.designation}
+            </p>
+          </div>
         </div>
-    );
+
+        {/* <div className="testimonial-card text-center p-4 shadow">
+         
+          
+          
+          <small></small>
+        </div> */}
+      </div>
+    </div>
+  );
 };
 
 export default TestimonialCard;
